@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Tution | Login</title>
-  <base href="http://localhost/Codeigniter_tutionclass/Tution/"/>
+  <base href="<?=base_url()?>"/>
   <meta name="description" content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <link rel="stylesheet" href="assets/libs/animate.css/animate.css" type="text/css" />
@@ -48,7 +48,7 @@
         </div>
         <button md-ink-ripple name="submit" type="submit" class="md-btn md-raised pink btn-block p-h-md">Sign in</button>
       </form>
-    </div name="submit">
+    </div >
     <div class="p-v-lg text-center">
       <div class="m-b"><button ui-sref="access.forgot-password" class="md-btn">Forgot password?</button></div>
     </div>
