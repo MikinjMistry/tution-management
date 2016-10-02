@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
 
     <title>Tution</title>
-    <base href="http://localhost/Codeigniter_tutionclass/Classes/"/>
+    <base href="<?=base_url()?>"/>
     <meta name="description" content="app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="assets/libs/animate.css/animate.css" type="text/css" />
