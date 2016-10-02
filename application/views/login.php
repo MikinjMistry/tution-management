@@ -48,7 +48,7 @@
         </div>
         <button md-ink-ripple name="submit" type="submit" class="md-btn md-raised pink btn-block p-h-md">Sign in</button>
       </form>
-    </div name="submit">
+    </div >
     <div class="p-v-lg text-center">
       <div class="m-b"><button ui-sref="access.forgot-password" class="md-btn">Forgot password?</button></div>
     </div>

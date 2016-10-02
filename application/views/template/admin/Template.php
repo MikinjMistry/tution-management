@@ -104,8 +104,6 @@
 
       </div>
     </div>
-
-
   </div>
 
   <script src="assets/libs/jquery/jquery/dist/jquery.js"></script>
