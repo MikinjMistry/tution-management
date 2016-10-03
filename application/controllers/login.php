@@ -22,8 +22,15 @@
 
       if(!empty($data))
       {
-        $this->session->set_userdata("user");
-        $this->template->load('admin/Template','index');
+        $this->session->set_userdata("user",$data);
+		if($data['role_name'] == 'admin')
+		{			
+			redirect('admin');
+		}
+		else
+		{
+			redirect("login");
+		}
       }
       else
       {
