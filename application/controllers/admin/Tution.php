@@ -22,7 +22,6 @@ class Tution extends CI_Controller {
     /* index method list out all the tution available in the system */
 
     public function index() {
-        $this->template->load('admin/Template', 'index', $this->data);
+        $this->template->load('admin/Template', 'admin/tution/registration', $this->data);
     }
-
 }
