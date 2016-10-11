@@ -13,52 +13,33 @@
                         <path d="M 50 0 L 8 80 L 0 14 Z" fill="rgba(220, 220, 220, 0.6)"></path>
                       </svg>
                     <img src="assets/images/logo.png" alt="." style="max-height: 36px; display:none">
-                    <span class="hidden-folded m-l inline">Materil</span>
+                    <span class="hidden-folded m-l inline">Admin</span>
                   </a>
                   <!-- / brand -->
               </div>
               <div class="box-row">
                 <div class="box-cell scrollable hover">
                   <div class="box-inner">
-                    <div class="p hidden-folded blue-50" style="background-image:url(assets/images/bg.png); background-size:cover">
+                    <div class="p hidden-foldblue" style="background-image:url(assets/images/bg.png); background-size:cover">
                       <div class="rounded w-64 bg-white inline pos-rlt">
                         <img src="assets/images/a0.jpg" class="img-responsive rounded">
                       </div>
                       <a class="block m-t-sm" ui-toggle-class="hide, show" target="#nav, #account">
-                        <span class="block font-bold">John Smith</span>
+                        <span class="block font-bold">Admin</span>
                         <span class="pull-right auto">
                           <i class="fa inline fa-caret-down"></i>
                           <i class="fa none fa-caret-up"></i>
                         </span>
-                        john.smith@gmail.com
-                      </a>
+						<?php echo $user['username'] ?>
                     </div>
                     <div id="nav">
                       <nav ui-nav>
                         <ul class="nav">
-                          <li class="nav-header m-v-sm hidden-folded">
-                            UI Kits
-                          </li>
                           <li>
-                            <a md-ink-ripple>
-                              <span class="pull-right text-muted">
-                                <i class="fa fa-caret-down"></i>
-                              </span>
-                              <i class="pull-right up"><b class="badge no-bg">2</b></i>
-                              <i class="icon mdi-action-settings-input-svideo i-20"></i>
-                              <span class="font-normal">Dashboard</span>
+                            <a md-ink-ripple href="admin/tution">
+                              <i class="icon mdi-device-multitrack-audio i-20"></i>
+                              <span class="font-normal">Tutions</span>
                             </a>
-                            <ul class="nav nav-sub">
-                              <li>
-                                <a md-ink-ripple href="index.html">Dashboard</a>
-                              </li>
-                              <li>
-                                <a md-ink-ripple href="dashboard.analysis.html">Analysis</a>
-                              </li>
-                              <li>
-                                <a md-ink-ripple href="dashboard.wall.html">Wall</a>
-                              </li>
-                            </ul>
                           </li>
                           <li>
                             <a md-ink-ripple>
