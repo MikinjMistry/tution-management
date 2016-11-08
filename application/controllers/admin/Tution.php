@@ -17,6 +17,7 @@ class Tution extends CI_Controller {
         } else {
             redirect('login');
         }
+        $this->load->model('basic_model', 'basic');
     }
 
     /* index method list out all the tution available in the system */

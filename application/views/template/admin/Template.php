@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.css" type="text/css" />
     <link rel="stylesheet" href="assets/libs/jquery/waves/dist/waves.css" type="text/css" />
     <link rel="stylesheet" href="assets/styles/material-design-icons.css" type="text/css" />
-
+    <!--<link rel="stylesheet" href="assets/styles/dataTables.min.css" type="text/css" />-->
+    
     <link rel="stylesheet" href="assets/libs/jquery/bootstrap/dist/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="assets/styles/dataTables.bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/styles/font.css" type="text/css" />
     <link rel="stylesheet" href="assets/styles/app.css" type="text/css" />
-
+     <script src="assets/libs/jquery/jquery/dist/jquery.js"></script>
   </head>
   <body>
   <div class="app">
@@ -106,10 +108,12 @@
     </div>
   </div>
 
-  <script src="assets/libs/jquery/jquery/dist/jquery.js"></script>
+ 
   <script src="assets/libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
   <script src="assets/libs/jquery/waves/dist/waves.js"></script>
 
+  <script src="assets/scripts/dataTables.min.js"></script>
+  <script src="assets/scripts/dataTables.bootstrap.min.js"></script>
   <script src="assets/scripts/ui-load.js"></script>
   <script src="assets/scripts/ui-jp.config.js"></script>
   <script src="assets/scripts/ui-jp.js"></script>
