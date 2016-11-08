@@ -24,4 +24,10 @@ class Tution extends CI_Controller {
     public function index() {
         $this->template->load('admin/Template', 'admin/tution/registration', $this->data);
     }
+    // Manage tuition 
+    public function manage_tution($type = '', $param1 = '', $param2 = '')
+    {
+        $this->data['title'] = 'Tuitions';
+        $this->template->load('admin/Template', 'admin/tution/tuitionlist', $this->data);
+    }
 }
