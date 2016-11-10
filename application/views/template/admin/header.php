@@ -36,7 +36,7 @@
                       <nav ui-nav>
                         <ul class="nav">
                           <li>
-                            <a md-ink-ripple href="admin/tution">
+                            <a md-ink-ripple href="admin/tutions">
                               <i class="icon mdi-device-multitrack-audio i-20"></i>
                               <span class="font-normal">Tutions</span>
                             </a>

@@ -47,4 +47,24 @@ class tution_model extends CI_Model
         $this->db->order_by($field, $dir);
         return $this->db->get()->result_array();
     }
+    /*
+     * Count tution by search string
+     * @param String $str search string
+     * @return
+     *      success : Number of tution
+    */
+    public function count_tution_by_search($str)
+    {
+        $this->db->select('l.username,c.id, c.class_name');
+        $this->db->from('classes c');
+        $this->db->join('login l', 'c.user_id=l.id');
+        if(!empty($likearr))
+        {
+            $this->db->group_start();
+            $this->db->or_like('username', $str);
+            $this->db->or_like('classname', $str);
+            $this->db->group_end();
+        }
+        return count($this->db->get()->result_array());
+    }
 }

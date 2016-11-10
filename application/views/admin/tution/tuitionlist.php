@@ -23,6 +23,17 @@
 </div>
 <script>
     $(function(){
-        $('#tutionlst').DataTable();
+        $('#tutionlst').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "ajax" : {
+                        url : 'admin/api/tutions/get',
+                        type : 'post'
+                    },
+            "aoColumnDefs": [
+                { 'bSortable': false, 'aTargets': [ 2 ] }
+             ]
+            
+        });
     })
 </script>
