@@ -54,6 +54,8 @@ $route['admin/tutions/(:any)/(:num)'] = 'admin/tution/manage_tution/$1/$2';
 $route['admin/api/tutions/(:any)'] = 'admin/tution/manage_tution/$1';
 $route['admin/tutions'] = 'admin/tution/manage_tution';
 
-$route['default_controller'] = 'dashboard';
+$route['tution'] = 'tution/index';
+
+$route['default_controller'] = 'login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

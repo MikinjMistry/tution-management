@@ -4,10 +4,26 @@ class login extends CI_Controller {
 
     function __construct() {
         parent::__construct();
+        if ($this->session->user) 
+        {
+            if ($this->session->user['role_name'] == 'admin') 
+            {
+                redirect('admin'); //forbidden
+            }
+            else if ($this->session->user['role_name'] == 'tution') 
+            {
+                redirect('tution'); //forbidden
+            }
+            else 
+            {
+                $this->data['user'] = $this->session->user;
+            }
+        } 
         $this->load->model("login_model");
     }
 
-    public function index() {
+    public function index() 
+    {
         $this->load->view("login");
     }
 
@@ -21,17 +37,13 @@ class login extends CI_Controller {
             $this->session->set_userdata("user", $data);
             if ($data['role_name'] == 'admin') {
                 redirect('admin');
-            } else {
+            } 
+            else {
                 redirect("login");
             }
         } else {
             redirect("login");
         }
-    }
-
-    public function logout() {
-        $this->session->unset_userdata("user");
-        redirect('login');
     }
     
     public function page_not_found()
