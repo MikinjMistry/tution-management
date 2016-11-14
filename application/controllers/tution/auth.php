@@ -14,7 +14,7 @@ class auth extends CI_Controller
         {
             if ($this->session->user['role_name'] != 'tution') 
             {
-                redirect('login/forbidden'); //forbidden
+                redirect('403'); //forbidden
             } 
             else 
             {

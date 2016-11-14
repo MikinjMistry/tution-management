@@ -10,7 +10,7 @@ class Tution extends CI_Controller {
         parent::__construct();
         if ($this->session->user) {
             if ($this->session->user['role_name'] != 'admin') {
-                redirect('login/forbidden'); // forbidden
+                redirect('403'); // forbidden
             } else {
                 $this->data['user'] = $this->session->user;
             }

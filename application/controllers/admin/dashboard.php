@@ -25,7 +25,7 @@ class Dashboard extends CI_Controller {
         parent::__construct();
         if ($this->session->user) {
             if ($this->session->user['role_name'] != 'admin') {
-                redirect('login/forbidden'); // forbidden
+                redirect('403'); // forbidden
             } else {
                 $this->data['user'] = $this->session->user;
             }
@@ -34,8 +34,8 @@ class Dashboard extends CI_Controller {
         }
     }
 
-    public function index() {
-
+    public function index() 
+    {
         $this->template->load('admin/Template', 'index', $this->data);
     }
 

@@ -56,6 +56,9 @@ $route['admin/tutions'] = 'admin/tution/manage_tution';
 
 $route['tution'] = 'tution/index';
 
+$route['404'] = 'logout/page_not_found';
+$route['403'] = 'logout/forbidden';
+
 $route['default_controller'] = 'login';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

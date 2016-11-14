@@ -8,11 +8,11 @@ class login extends CI_Controller {
         {
             if ($this->session->user['role_name'] == 'admin') 
             {
-                redirect('admin'); //forbidden
+                redirect('admin');
             }
             else if ($this->session->user['role_name'] == 'tution') 
             {
-                redirect('tution'); //forbidden
+                redirect('tution');
             }
             else 
             {
@@ -46,13 +46,6 @@ class login extends CI_Controller {
         }
     }
     
-    public function page_not_found()
-    {
-        $this->load->view('404');
-    }
     
-    public function forbidden(){
-        $this->load->view('403');
-    }
 }
 ?>

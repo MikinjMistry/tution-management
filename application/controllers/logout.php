@@ -22,4 +22,14 @@ class logout extends CI_Controller
         $this->session->unset_userdata("user");
         redirect('login');
     }
+    
+    public function page_not_found()
+    {
+        $this->load->view('404');
+    }
+    
+    public function forbidden()
+    {
+        $this->load->view('403');
+    }
 }
