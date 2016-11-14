@@ -58,7 +58,8 @@ class Tution extends CI_Controller {
                 $data['data'][] = [
                     $row['username'],
                     $row['class_name'],
-                    '<a href="admin/tutions/delete/'.$row['id'].'" onclick="return confirm(\'Are you sure you want to Delete?\')"><i class="fa fa-remove"></i></a>'
+                    '<a href="admin/tutions/delete/'.$row['id'].'" onclick="return confirm(\'Are you sure you want to Delete?\')"><i class="fa fa-remove"></i></a>&nbsp;'.
+                    '<a href="javascript:;" id="'.$row['id'].'" class="branch_view" title="view branches"><i class="fa fa-building-o"></i></a>'
                 ];
             }
             echo json_encode($data);
@@ -68,6 +69,12 @@ class Tution extends CI_Controller {
         {
             $this->basic->delete('classes', ['id' => $param1]);
             redirect('admin/tutions');
+            die;
+        }
+        else if($type == 'branch')
+        {
+            $data['tution'] = $this->tution->get_branch_detial_by_class_id($param1);
+            echo $this->load->view('admin/partial/branchlist', $data, true);
             die;
         }
         $this->data['title'] = 'Tuitions';

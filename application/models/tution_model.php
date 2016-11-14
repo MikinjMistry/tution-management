@@ -67,4 +67,15 @@ class tution_model extends CI_Model
         }
         return count($this->db->get()->result_array());
     }
+    /*
+     * Get braches by class id
+     * @param Integer $id class id
+     * @return
+     *      success : Array of branch detail    
+    */
+    public function get_branch_detial_by_class_id($id)
+    {
+        $this->db->where('class_id', $id);
+        return $this->db->get('branch')->result_array();
+    }
 }
