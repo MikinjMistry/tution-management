@@ -5,7 +5,7 @@
             <th>Address</th>
             <th>Establishment Year</th>
             <th>Creation Date</th>
-            <th>Tuition Status</th>
+            <th>Status</th>
         </thead>
         <tbody>
              
@@ -27,7 +27,7 @@
                             <td><?=$row['address']?></td>
                             <td><?=$row['establishment_year']?></td>
                             <td><?=date('d M, Y', strtotime($row['creation_time']))?></td>
-                            <td><?=$row['is_approved'] == '1' ? 'YES' : 'NO'?></td>
+                            <td><?=$row['is_approved'] == '1' ? 'Approved' : 'Unapproved'?></td>
                         </tr>
             <?php
                     }
