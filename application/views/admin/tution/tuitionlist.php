@@ -66,5 +66,17 @@
                 }
             });
         });
+        // Get standerd detail of perticular branch
+        $(document).on('click', '.dis_standerd', function(){
+            var id = $(this).attr('data-id');
+            $.ajax({
+                url : 'admin/tutions/standard/'+id,
+                method : 'get',
+                success : function(res){
+                    $('.standard').html(res);
+                    $('.subview').slideDown();
+                }
+            });
+        });
     })
 </script>

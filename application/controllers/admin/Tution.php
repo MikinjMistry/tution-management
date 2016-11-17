@@ -77,6 +77,13 @@ class Tution extends CI_Controller {
             echo $this->load->view('admin/partial/branchlist', $data, true);
             die;
         }
+        else if($type == 'standard')
+        {
+            $data['standard'] = $this->tution->get_standard_by_branch_id($param1);
+            echo $this->load->view('admin/partial/standardlist', $data, true);
+            die;
+        }
+            
         $this->data['title'] = 'Tuitions';
         $this->template->load('admin/Template', 'admin/tution/tuitionlist', $this->data);
     }
