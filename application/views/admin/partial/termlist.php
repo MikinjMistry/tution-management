@@ -14,7 +14,7 @@
         ?>
         <tr>
             <td><?=$row['id']?></td>
-            <td><?=$row['name']?></td>
+            <td><?=$row['term_name']?></td>
         </tr>
         <?php
             }
