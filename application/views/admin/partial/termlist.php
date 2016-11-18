@@ -2,21 +2,19 @@
     <thead>
         <th>Id</th>
         <th>Name</th>
-        <th></th>
     </thead>
     <tbody>
         <?php
-            if(empty($standard))
+            if(empty($term))
             {
-                echo '<tr><td colspan="3">No standard available.</td></tr>';
+                echo '<tr><td colspan="3">No terms available.</td></tr>';
             }
-            foreach($standard as $row)
+            foreach($term as $row)
             {
         ?>
         <tr>
             <td><?=$row['id']?></td>
             <td><?=$row['name']?></td>
-            <td><a href="javascript:;" title="view terms" class="dis_term" data-id="<?=$row['bsid']?>"><i class="fa fa-angle-double-right"></i></a></td>
         </tr>
         <?php
             }
