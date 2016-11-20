@@ -1,0 +1,29 @@
+Ashish : (Admin panel)
+
+1.) Tution Registration (Send username and password through mail)
+2.) Listing of tution
+3.) Edit information of tution class
+4.) View detail information of tution
+	4.1) View Faculty of particular tution
+	4.2) View Student of particular standard
+	4.3) View Fee installment of particular student
+
+Siddharth : (Admin panel)
+1) Listing of tution
+2) View Branches of particular tution
+3) View Standard of particular branch
+4) View terms of particular standard
+5) View Subject of particular term
+
+Mikinj : (Tution Class)
+1) Manage profile info
+	1.1) Tution details
+	1.2) Manage Branch (Insert, update, delete, listing)
+	1.3) Manage standard by branch (Insert, update, delete, listing)
+	1.4) Manage term by Standard (Insert, update, delete, listing)
+
+Mahesh : (Tution Class)
+1) Manage Subject of an standard
+2) Manage Faculty of an tution
+3) Manage Student of an branch
+4) Manage Fee installment of an student by standard

@@ -3,6 +3,9 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     Tuition List
+                    <div class="pull-right">
+                        <a href="admin/tutions/add" class="btn btn-primary btn-icon tution_add_btn"><i class="fa fa-plus"></i>&nbsp;&nbsp;Add</a>
+                    </div>
                 </div>
                 <div class="panel-body">
                 <div class="table-responsive">
