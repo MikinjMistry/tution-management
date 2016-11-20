@@ -78,5 +78,17 @@
                 }
             });
         });
+        // Get Term detail by branch standard id
+        $(document).on('click', '.dis_term', function(){
+            var id = $(this).attr('data-id');
+            $.ajax({
+                url : 'admin/tutions/term/'+id,
+                method : 'get',
+                success : function(res)
+                {
+                    $('.terms').html(res);
+                }
+            });
+        });
     })
 </script>

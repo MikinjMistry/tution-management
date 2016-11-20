@@ -86,9 +86,22 @@ class tution_model extends CI_Model
     */
     public function get_standard_by_branch_id($id)
     {
-        $this->db->select('s.*');
+        $this->db->select('s.*,bs.id as bsid');
         $this->db->from('standard s');
         $this->db->join('branch_standard bs', 'bs.standard_id=s.id and bs.branch_id = '.$id);
+        return $this->db->get()->result_array();
+    }
+    /*
+     * Get term data by branch_standard id
+     * @param Integer $id branch_standard id
+     * @return
+     *      success : Array of term detail
+    */
+    public function get_term_by_branch_standard_id($id)
+    {
+        $this->db->select('id,term_name');
+        $this->db->from('term');
+        $this->db->where('branch_standard_id',$id);
         return $this->db->get()->result_array();
     }
 }
